@@ -83,7 +83,7 @@ def needle(seq1, seq2):
     # Traceback and compute the alignment 
     align1, align2 = '', ''
     i,j = m,n # start from the bottom right cell
-    while i > 0 and j > 0: # end toching the top or the left edge
+    while i > 0 and j > 0: # end touching the top or the left edge
         score_current = score[i][j]
         score_diagonal = score[i-1][j-1]
         score_up = score[i][j-1]
